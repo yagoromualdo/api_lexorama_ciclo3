@@ -27,9 +27,9 @@ app.use(express.json());
 
 app.get('/assinatura', (req, res) => assinaturaController.findAll(req, res));
 app.post('/assinatura', (req, res) => assinaturaController.create(req, res));
-app.get('/assinatura/:id', (req, res) => assinaturaController.findById(req, res));
-app.put('/assinatura/:id', (req, res) => assinaturaController.update(req, res));
-app.delete('/assinatura/:id', (req, res) => assinaturaController.delete(req, res));
+app.get('/assinatura/:id_assinatura', (req, res) => assinaturaController.findById(req, res));
+app.put('/assinatura/:id_assinatura', (req, res) => assinaturaController.update(req, res));
+app.delete('/assinatura/:id_assinatura', (req, res) => assinaturaController.delete(req, res));
 
 app.get('/paciente', (req, res) => pacienteController.findAll(req, res));
 app.post('/paciente', (req, res) => pacienteController.create(req, res));

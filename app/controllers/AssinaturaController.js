@@ -13,9 +13,7 @@ class AssinaturaController {
   async findById(req, res) {
     try {
       const id_assinatura = req.params.id_assinatura;
-      const assinatura = await Assinatura.findByPk(id_assinatura, {
-        include: [Profissional, TipoAssinatura],
-      });
+      const assinatura = await Assinatura.findByPk(id_assinatura);
 
       if (assinatura) {
         res.status(200).json(assinatura);

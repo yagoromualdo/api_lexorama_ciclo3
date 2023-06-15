@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../../database');
 
-const TipoAssinatura = sequelize.define('tipo_assinatura', {
+const TipoAssinatura = sequelize.define('tipo_assinaturas', {
     id_tipo_assinatura: {
         type: DataTypes.INTEGER,
         primaryKey: true,

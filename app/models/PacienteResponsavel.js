@@ -3,7 +3,7 @@ const sequelize = require('../../database');
 const Paciente = require('./Paciente');
 const Responsavel = require('./Responsavel');
 
-const PacienteResponsavel = sequelize.define('pacientes_responsaveis', {
+const PacienteResponsavel = sequelize.define('pacientes_responsavels', {
     id_paciente_responsavel: {
         type: DataTypes.INTEGER,
         primaryKey: true,

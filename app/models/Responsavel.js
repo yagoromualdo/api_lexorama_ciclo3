@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../../database');
 
-const Responsavel = sequelize.define('responsaveis', {
+const Responsavel = sequelize.define('responsavels', {
     id_responsavel: {
         type: DataTypes.INTEGER,
         primaryKey: true,
